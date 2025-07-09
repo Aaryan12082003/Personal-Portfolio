@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio | Aaryan</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Aaryan Tomar's personal portfolio. Frontend Developer skilled in HTML, CSS, JavaScript, React. View projects, skills, and contact info.">
+    <meta name="keywords" content="Aaryan Tomar, Frontend Developer, Portfolio, HTML, CSS, JavaScript, React">
+    <meta name="author" content="Aaryan Tomar">
+    <!-- Social Meta Tags -->
+    <meta property="og:title" content="Aaryan Tomar | Frontend Developer Portfolio">
+    <meta property="og:description" content="Explore my projects, skills, and contact me for collaboration.">
+    <meta property="og:image" content="Aaryan_p/Aaryan img.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-portfolio-url.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aaryan Tomar | Frontend Developer Portfolio">
+    <meta name="twitter:description" content="Explore my projects, skills, and contact me for collaboration.">
+    <meta name="twitter:image" content="Aaryan_p/Aaryan img.png">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="animation.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Portfolio Interactivity Script -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo" style="--i: 1">Port<span>folio</span></a>
+            <ul>
+                <li><a href="index.html" class="active" style="--i: 2">Home</a></li>
+                <li><a href="#about" style="--i: 3">About</a></li>
+                <li><a href="#skills" style="--i: 4">Skills</a></li>
+                <li><a href="#services" style="--i: 5">Services</a></li>
+                <li><a href="#portfolio" style="--i: 6">Portfolio</a></li>
+                <li><a href="#contact" style="--i: 7">Contact</a></li>
+            </ul>
+
+            <a href="#" class="cvbtn" style="--i: 8">Download CV<i class="fa-solid fa-download"></i></a>
+        </nav>
+    </header>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>About Me</h2>
+            <p>Hello! I'm Aaryan Tomar, a passionate Frontend Developer dedicated to building beautiful and interactive web experiences. I love working with HTML, CSS, JavaScript, and React to turn ideas into reality. Let's create something amazing together!</p>
+        </div>
+    </div>
+
+
+    <!-- Hero Section -->
+     <section id="home" class="hero-container">
+        <div class="hero-img hero-image-animation">
+            <img src="./Aaryan_p/Aaryan img.png" alt="image">
+        </div>
+        <div class="hero-content hero-content-animation">
+            <h3 style="--i: 1">Hello, I'm</h3>
+            <h1 style="--i: 2">Aaryan Tomar</h1>
+            <h2 class="slide-right" style="--i: 3">And I'm a <span>Frontend Developer</span></h2>
+            <p style="--i: 4">Turning ideas into interactive, pixel-perfect web experiences using HTML, CSS, JavaScript, and React.</p>
+            <div class="social-icons" style="--i: 5">
+                <a href="https://www.facebook.com/profile.php?id=100014386151873"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/aaryantomar2004/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/aaryan_4040/"><i class="fa-brands fa-square-instagram"></i></a> 
+            </div>
+            <div class="hero-btn" style="--i: 6">
+                <a href="#" class="btn blue-btn" id="hireme-btn">Hire Me</a>
+                <a href="#" class="btn blue-btn" id="contactme-btn">Contact Me</a>
+            </div>
+        </div>
+     </section>
+    
+    <!-- Stats -->
+     <section class="stats" stats-animation>
+        <div class="stat">
+            <h2>0+</h2>
+            <span>Years of <br>experience</span>
+        </div>
+        <div class="stat">
+            <h2>4</h2>
+            <span>Projects <br>completed</span>
+        </div>
+        <div class="stat">
+            <h2>5+</h2>
+            <span>Technologies <br>mastered</span>
+        </div>
+        <div class="stat">
+            <h2>100+</h2>
+            <span>Satisfied <br>Clients</span>
+        </div>
+     </section>
+
+    <!-- Skills Modal -->
+    <div id="skills-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal skills-close">&times;</span>
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>JavaScript programming</li>
+                <li>Cascading Style Sheets</li>
+                <li>HTML coding</li>
+                <li>Web interface development</li>
+                <li>Proficient in React.js</li>
+                <li>Java programming</li>
+                <li>Bootstrap framework</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Services Modal -->
+    <div id="services-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal services-close">&times;</span>
+            <h2>Service Experience</h2>
+            <h4 style="margin-bottom:0.7rem; color:#00b4d8;">Frontend Developer Intern, 07/2025 - Current</h4>
+            <div style="font-weight:500; margin-bottom:0.5rem; color:#4a4e69;">Unified Mentors Pvt.Ltd – Gurugram (Remote)</div>
+            <ul class="skills-list">
+                <li>Supported staff members in their daily tasks, reducing workload burden and allowing for increased focus on higher-priority assignments.</li>
+                <li>Gained valuable experience working within a specific industry, applying learned concepts directly into relevant work situations.</li>
+                <li>Analyzed problems and worked with teams to develop solutions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal portfolio-close">&times;</span>
+            <h2>Portfolio Projects</h2>
+            <div style="margin-bottom:1.2rem;">
+                <strong>OMR Checking Applications | College</strong><br>
+                <span style="color:#4a4e69; font-size:0.98rem;">Jan 2025 - Apr 2025</span>
+                <ul class="skills-list">
+                    <li>Created an OMR Checking Application for automatic evaluation of scanned answer sheets and forms</li>
+                    <li>The system is capable of detecting and interpreting marks on predefined answer sheets</li>
+                </ul>
+            </div>
+            <div style="margin-bottom:1.2rem;">
+                <strong>A holistic study of Internet of Things (IoT)</strong><br>
+                <span style="color:#4a4e69; font-size:0.98rem;">Aug 2023 - Nov 2023</span>
+                <ul class="skills-list">
+                    <li>Analyzed IoT architecture and communication protocols like MQTT and CoAP.</li>
+                    <li>Explored sensor integration, data transmission, cloud connectivity, and security challenges.</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Deloitte Australia Cyber Job Simulation on Forage</strong><br>
+                <span style="color:#4a4e69; font-size:0.98rem;">July 2025</span>
+                <ul class="skills-list">
+                    <li>Completed a job simulation involving reading web activity logs</li>
+                    <li>Supported a client in a cyber security breach</li>
+                    <li>Answered questions to identify suspicious user activity</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog/Articles Section -->
+    <section id="blog" class="blog-section">
+        <h2>Blog & Articles</h2>
+        <div class="blog-list">
+            <article class="blog-post">
+                <h3>How I Built This Portfolio</h3>
+                <p>A behind-the-scenes look at the design and code decisions for this site.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="blog-post">
+                <h3>Top 5 Frontend Tools I Use</h3>
+                <p>Discover the essential tools and libraries that power my workflow.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal contact-close">&times;</span>
+            <h2>Contact Me</h2>
+            <div style="margin: 1.2rem 0 0.7rem 0; font-size: 1.1rem;">
+                <strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&to=tomaraaryan2003@gmail.com" target="_blank" rel="noopener noreferrer" id="gmail-link">tomaraaryan2003@gmail.com</a>
+            </div>
+            <div style="font-size: 1.1rem;">
+                <strong>Phone:</strong> <a id="phone-link" href="tel:+919068366206">+91 9068366206</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hire Me Modal -->
+    <div id="hireme-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal hireme-close">&times;</span>
+        <h2>Hire Me</h2>
+        <form id="hireme-form" autocomplete="off">
+          <div style="margin-bottom: 0.7rem;">
+            <label for="companyName"><strong>Company Name:</strong></label><br>
+            <input type="text" id="companyName" name="companyName" required style="width:100%;padding:0.4rem;margin-top:0.2rem;">
+          </div>
+          <div style="margin-bottom: 0.7rem;">
+            <label for="contactName"><strong>Your Name:</strong></label><br>
+            <input type="text" id="contactName" name="contactName" required style="width:100%;padding:0.4rem;margin-top:0.2rem;">
+          </div>
+          <div style="margin-bottom: 0.7rem;">
+            <label for="contactEmail"><strong>Email:</strong></label><br>
+            <input type="email" id="contactEmail" name="contactEmail" required style="width:100%;padding:0.4rem;margin-top:0.2rem;">
+          </div>
+          <div style="margin-bottom: 0.7rem;">
+            <label for="message"><strong>Message:</strong></label><br>
+            <textarea id="message" name="message" rows="3" required style="width:100%;padding:0.4rem;margin-top:0.2rem;"></textarea>
+          </div>
+          <button type="submit" class="btn" style="width:100%;margin-top:0.5rem;">Send Details</button>
+          <div id="hireme-success" style="display:none;color:#00b894;margin-top:1rem;text-align:center;">Thank you! Your details have been submitted.</div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Blog Article Modals -->
+    <div id="blog1-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal blog1-close">&times;</span>
+        <h2>How I Built This Portfolio</h2>
+        <p>This portfolio was built using HTML, CSS, and JavaScript, with a focus on modern UI/UX and responsive design. I used modal popups for each section, smooth scroll navigation, and a dark/light theme toggle. Animations were added for a lively feel, and all content is easily editable for future updates. The code is modular and scalable, making it easy to add new features like this blog section!</p>
+        <ul>
+          <li>Responsive layout using Flexbox and media queries</li>
+          <li>Custom modals for About, Skills, Services, Portfolio, Contact, and Blog</li>
+          <li>Animated skill progress bars and stats counters</li>
+          <li>SEO and social meta tags for better discoverability</li>
+        </ul>
+      </div>
+    </div>
+    <div id="blog2-modal" class="modal">
+      <div class="modal-content" style="max-width: 420px; padding-top: 1.2rem; padding-bottom: 1.2rem;">
+        <span class="close-modal blog2-close" style="top: 1.1rem; right: 1.1rem; position: absolute; font-size: 2rem; cursor: pointer;">&times;</span>
+        <h2 style="margin-bottom: 0.7rem; margin-top: 0;">Top 5 Frontend Tools I Use</h2>
+        <ol style="padding-left: 1.2rem; margin-bottom: 0.7rem; margin-top: 0;">
+          <li style="margin-bottom: 0.45rem;"><strong>VS Code</strong> – My go-to code editor for its speed, extensions, and Git integration.</li>
+          <li style="margin-bottom: 0.45rem;"><strong>React.js</strong> – For building dynamic, component-based UIs.</li>
+          <li style="margin-bottom: 0.45rem;"><strong>Figma</strong> – For designing and prototyping UI/UX before coding.</li>
+          <li style="margin-bottom: 0.45rem;"><strong>Git & GitHub</strong> – For version control and collaboration.</li>
+          <li><strong>Chrome DevTools</strong> – For debugging and performance tuning.</li>
+        </ol>
+        <p style="margin-bottom: 0; margin-top: 0.5rem;">These tools help me work efficiently and deliver high-quality web projects. I’m always exploring new libraries and frameworks to stay up-to-date!</p>
+      </div>
+    </div>
+
+<script>
+// Open Gmail compose window when clicking the email link in the contact modal
+const gmailLink = document.getElementById('gmail-link');
+if (gmailLink) {
+    gmailLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = 'tomaraaryan2003@gmail.com';
+        const subject = encodeURIComponent('');
+        const body = encodeURIComponent('');
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+        window.open(gmailUrl, '_blank');
+    });
+}
+// Open dial pad on mobile, show message on desktop
+const phoneLink = document.getElementById('phone-link');
+if (phoneLink) {
+    phoneLink.addEventListener('click', function(e) {
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (!isMobile) {
+            e.preventDefault();
+            alert('Dial pad will open on mobile devices.');
+        }
+    });
+}
+
+// Hire Me Modal logic
+const hireMeBtn = document.getElementById('hireme-btn');
+const hireMeModal = document.getElementById('hireme-modal');
+const hireMeClose = document.querySelector('.hireme-close');
+const hireMeForm = document.getElementById('hireme-form');
+const hireMeSuccess = document.getElementById('hireme-success');
+
+if (hireMeBtn && hireMeModal && hireMeClose && hireMeForm && hireMeSuccess) {
+    hireMeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        hireMeModal.style.display = 'flex'; // Changed from 'block' to 'flex' for proper centering and background
+        hireMeModal.style.background = '';
+        hireMeModal.style.backdropFilter = '';
+        hireMeModal.style.opacity = '';
+    });
+    hireMeClose.addEventListener('click', function() {
+        hireMeModal.style.display = 'none';
+        hireMeForm.reset();
+        hireMeSuccess.style.display = 'none';
+    });
+    window.addEventListener('click', function(e) {
+        if (e.target === hireMeModal) {
+            hireMeModal.style.display = 'none';
+            hireMeForm.reset();
+            hireMeSuccess.style.display = 'none';
+        }
+    });
+    hireMeForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const company = document.getElementById('companyName').value.trim();
+        const name = document.getElementById('contactName').value.trim();
+        const email = document.getElementById('contactEmail').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const subject = encodeURIComponent('Hire Me Inquiry from ' + (company || name));
+        const body = encodeURIComponent(
+            `Company Name: ${company}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
+        );
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=tomaraaryan2003@gmail.com&su=${subject}&body=${body}`;
+        window.open(gmailUrl, '_blank');
+        hireMeSuccess.style.display = 'block';
+        setTimeout(() => {
+            hireMeModal.style.display = 'none';
+            hireMeForm.reset();
+            hireMeSuccess.style.display = 'none';
+        }, 2000);
+    });
+}
+
+// Contact Me button in hero section and navbar Contact link open Contact modal
+const contactMeBtn = document.getElementById('contactme-btn');
+const contactNavBtn = document.querySelector('a[href="#contact"]');
+const contactModal = document.getElementById('contact-modal');
+const contactClose = document.querySelector('.contact-close');
+if (contactMeBtn && contactModal && contactClose) {
+    contactMeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        contactModal.style.display = 'flex';
+    });
+}
+if (contactNavBtn && contactModal && contactClose) {
+    contactNavBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        contactModal.style.display = 'flex';
+    });
+}
+if (contactClose && contactModal) {
+    contactClose.addEventListener('click', function() {
+        contactModal.style.display = 'none';
+    });
+    window.addEventListener('click', function(e) {
+        if (e.target === contactModal) {
+            contactModal.style.display = 'none';
+        }
+    });
+}
+
+// Blog Read More modal logic
+const blog1Modal = document.getElementById('blog1-modal');
+const blog2Modal = document.getElementById('blog2-modal');
+const blog1Close = document.querySelector('.blog1-close');
+const blog2Close = document.querySelector('.blog2-close');
+document.querySelectorAll('.blog-post .read-more')[0].addEventListener('click', function(e) {
+  e.preventDefault();
+  blog1Modal.style.display = 'flex';
+});
+document.querySelectorAll('.blog-post .read-more')[1].addEventListener('click', function(e) {
+  e.preventDefault();
+  blog2Modal.style.display = 'flex';
+});
+if (blog1Close && blog1Modal) {
+  blog1Close.addEventListener('click', function() {
+    blog1Modal.style.display = 'none';
+  });
+  window.addEventListener('click', function(e) {
+    if (e.target === blog1Modal) blog1Modal.style.display = 'none';
+  });
+}
+if (blog2Close && blog2Modal) {
+  blog2Close.addEventListener('click', function() {
+    blog2Modal.style.display = 'none';
+  });
+  window.addEventListener('click', function(e) {
+    if (e.target === blog2Modal) blog2Modal.style.display = 'none';
+  });
+}
+</script>
+</body>
+
+</html>

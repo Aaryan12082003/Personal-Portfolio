@@ -1,0 +1,113 @@
+/* =====================
+   NAVBAR ANIMATIONS
+   ===================== */
+
+/* Animate navbar items sliding in from left */
+.navbar ul li {
+    opacity: 0;
+    animation: slideRight 1.5s ease-in-out forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+.navbar ul li:nth-child(1) { animation-delay: 0.2s; }
+.navbar ul li:nth-child(2) { animation-delay: 0.4s; }
+.navbar ul li:nth-child(3) { animation-delay: 0.6s; }
+.navbar ul li:nth-child(4) { animation-delay: 0.8s; }
+.navbar ul li:nth-child(5) { animation-delay: 1.0s; }
+.navbar ul li:nth-child(6) { animation-delay: 1.2s; }
+
+/* Logo animation */
+.navbar .logo {
+    opacity: 0;
+    animation: slideRight 1.5s ease-in-out forwards;
+    animation-delay: 0.1s;
+}
+
+/* Slide right animation for any element */
+.slide-right {
+    opacity: 0;
+    animation: slideRight 1.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+}
+
+/* Download CV button animation */
+.cvbtn {
+    opacity: 0;
+    animation: slideRight 1.5s ease-in-out forwards;
+    animation-delay: 1.6s;
+}
+
+.cvbtn:hover {
+    transform: translateX(10px) scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* =====================
+   HERO SECTION ANIMATIONS
+   ===================== */
+
+/* Hero image zoom and bounce in */
+.hero-image-animation {
+    opacity: 0;
+    animation: zommBounce 2s ease-in-out forwards;
+    animation-delay: 1.4s;
+}
+
+@keyframes zommBounce {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hero content fade in up for each child */
+.hero-content-animation > * {
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+    animation-delay: calc(0.5s * var(--i));
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* =====================
+   STATS SECTION ANIMATION
+   ===================== */
+
+.stats-animation {
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+}
+
+/* =====================
+   END OF ANIMATION CSS
+   ===================== */
